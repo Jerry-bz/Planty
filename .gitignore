@@ -1,0 +1,33 @@
+# Ignorer le core de WordPress
+/wp-admin/
+/wp-includes/
+
+# Ignorer les fichiers de configuration sensibles
+/wp-config.php
+
+# Ignorer les plugins, sauf si vous développez un plugin spécifique
+/wp-content/plugins/*
+
+# Ignorer les fichiers de téléchargement
+/wp-content/uploads/
+
+# Ignorer les caches et les fichiers temporaires
+wp-content/cache/
+wp-content/upgrade/
+
+# Ne versionner que votre thème enfant, ignorer les autres thèmes
+/wp-content/themes/*
+!/wp-content/themes/nom-du-theme-enfant/
+
+# Ignorer les fichiers système cachés
+.DS_Store
+Thumbs.db
+
+# Ignorer les fichiers de log
+*.log
+
+# Ignorer les fichiers d'édition d'éditeurs comme VSCode, Sublime, etc.
+*.sublime-project
+*.sublime-workspace
+.vscode/
+.idea/
