@@ -11,3 +11,78 @@
  Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
  Text Domain:  astra-child
 */
+
+/* Supprimer les marges pour que le conteneur prenne toute la largeur de l'écran.  */
+.ast-container {
+	padding:0;
+	max-width:100%;
+}
+
+/* Augmenter la taille du padding pour agrandir la zone de survol (hover) des éléments de menu. */
+#ast-hf-menu-1 li a {
+	padding:30px 50px;
+}
+
+/* Réduire la hauteur minimale de l'en-tête du site. */
+.site-primary-header-wrap {
+	min-height:0 !important;
+}
+
+.home-section_cover {
+	border-radius: 0 0 300px 300px / 0 0 50px 50px !important;
+} 
+
+.home-section__flavors {
+	border-radius: 0 0 300px 300px / 0 0 20px 20px !important;
+}
+
+.home-section__banner  {
+	font-family:sine;
+	font-weight:800;
+}
+
+.meet-section__intro {
+	border-radius: 0 0 300px 300px / 0 0 50px 50px ;
+	background-image:url('http://planty.local/wp-content/uploads/2024/08/logo-fleur.png');
+	background-position: 25% 50px;
+	background-repeat: no-repeat;
+	background-size:110px 110px;
+	padding:25px;
+}
+
+
+
+.meet-section__team  {
+	background-image:url('http://planty.local/wp-content/uploads/2024/08/plante-droite.png');
+	background-position: 95% 100%;
+	background-repeat: no-repeat;
+	background-size: 100px 100px;
+}
+
+
+
+/* Formulaire */
+.wpcf7-form {
+	max-width:50%;
+	margin:auto;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+}
+
+.form_background {
+	background-image:url('http://planty.local/wp-content/uploads/2024/08/logo-fleur-2.png');
+	background-position:left bottom;
+	background-repeat: no-repeat;
+	background-size: 100px 100px;
+	padding: 0 44px 3px 44px;
+}
+
+
+#form_send {
+	display:flex;
+	align-items:center;
+	background-color:#E0B9B4;
+	color:white;
+	border-radius:0px;
+}
