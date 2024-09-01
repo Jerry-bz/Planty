@@ -24,7 +24,7 @@ function add_extra_item_to_nav_menu($items, $args)
     // Vérifie si l'utilisateur est connecté et si le menu est le menu principal
     if (is_user_logged_in() && $args->theme_location == 'primary') {
         // Crée le lien "Admin"
-        $admin_link = '<li id="menu-item-567" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-567"><a href="http://planty.local/admin/" class="menu-link">Admin</a></li>';
+        $admin_link = '<li id="menu-item-567" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-567"><a href="' . admin_url() . '" class="menu-link">Admin</a></li>';
 
         // Convertit les éléments du menu en un tableau
         $items_array = explode('</li>', $items);

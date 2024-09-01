@@ -29,26 +29,46 @@
 }
 
 .home-section_cover {
-  border-radius: 0 0 300px 300px / 0 0 50px 50px !important;
+  border-radius: 0 0 800px 800px / 0 0 80px 80px !important;
 }
 
 .home-section__flavors {
   border-radius: 0 0 300px 300px / 0 0 20px 20px !important;
 }
 
-.home-section__banner {
-  font-family: sine;
-  font-weight: 800;
+/* Image couverture accueil */
+.home-section__image {
+  position: relative; /* Positionnement relatif du conteneur parent */
+  min-height: 650px;
+  max-width: 50%;
 }
 
-.meet-section__intro {
-  border-radius: 0 0 300px 300px / 0 0 50px 50px;
-  background-image: url("http://planty.local/wp-content/uploads/2024/08/logo-fleur.png");
-  background-position: 25% 50px;
-  background-repeat: no-repeat;
-  background-size: 110px 110px;
-  padding: 25px;
+.home-image__left,
+.home-image__center,
+.home-image__right {
+  position: absolute; /* Positionnement absolu des images par rapport au conteneur parent */
+  top: 50%; /* Place le centre vertical de l'image à 50% de la hauteur du conteneur */
+  transform: translate(-50%, -50%); /* Centre l'image horizontalement et verticalement */
+  max-width: 30%; /* Ajustez la largeur des images pour les rendre plus petites */
 }
+
+/* Positionnement horizontal de chaque image */
+.home-image__left {
+  left: 36%; /* Place l'image de gauche */
+  z-index: 1;
+}
+
+.home-image__center {
+  left: 50%; /* Place l'image du centre */
+  z-index: 2;
+}
+
+.home-image__right {
+  left: 64%; /* Place l'image de droite */
+  z-index: 1;
+}
+
+
 
 @media (max-width: 1440px) {
   .meet-section__intro {
