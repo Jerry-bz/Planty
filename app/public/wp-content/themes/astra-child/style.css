@@ -50,6 +50,25 @@
   padding: 25px;
 }
 
+@media (max-width: 1440px) {
+  .meet-section__intro {
+    background-position: 15% 50px;
+    background-size: 80px 80px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .meet-section__intro {
+    background-position: 10% 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  .meet-section__intro {
+    background-size: 60px 60px;
+  }
+}
+
 .meet-section__team {
   background-image: url("http://planty.local/wp-content/uploads/2024/08/plante-droite.png");
   background-position: 95% 100%;
@@ -64,6 +83,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+@media (max-width: 768px) {
+  .wpcf7-form {
+    max-width: 85%;
+  }
 }
 
 .meet-form_background {
