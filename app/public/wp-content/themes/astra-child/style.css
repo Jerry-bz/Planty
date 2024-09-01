@@ -14,75 +14,117 @@
 
 /* Supprimer les marges pour que le conteneur prenne toute la largeur de l'écran.  */
 .ast-container {
-	padding:0;
-	max-width:100%;
+  padding: 0;
+  max-width: 100%;
 }
 
 /* Augmenter la taille du padding pour agrandir la zone de survol (hover) des éléments de menu. */
 #ast-hf-menu-1 li a {
-	padding:30px 50px;
+  padding: 35px 50px;
 }
 
 /* Réduire la hauteur minimale de l'en-tête du site. */
 .site-primary-header-wrap {
-	min-height:0 !important;
+  min-height: 0 !important;
 }
 
 .home-section_cover {
-	border-radius: 0 0 300px 300px / 0 0 50px 50px !important;
-} 
-
-.home-section__flavors {
-	border-radius: 0 0 300px 300px / 0 0 20px 20px !important;
+  border-radius: 0 0 300px 300px / 0 0 50px 50px !important;
 }
 
-.home-section__banner  {
-	font-family:sine;
-	font-weight:800;
+.home-section__flavors {
+  border-radius: 0 0 300px 300px / 0 0 20px 20px !important;
+}
+
+.home-section__banner {
+  font-family: sine;
+  font-weight: 800;
 }
 
 .meet-section__intro {
-	border-radius: 0 0 300px 300px / 0 0 50px 50px ;
-	background-image:url('http://planty.local/wp-content/uploads/2024/08/logo-fleur.png');
-	background-position: 25% 50px;
-	background-repeat: no-repeat;
-	background-size:110px 110px;
-	padding:25px;
+  border-radius: 0 0 300px 300px / 0 0 50px 50px;
+  background-image: url("http://planty.local/wp-content/uploads/2024/08/logo-fleur.png");
+  background-position: 25% 50px;
+  background-repeat: no-repeat;
+  background-size: 110px 110px;
+  padding: 25px;
 }
 
-
-
-.meet-section__team  {
-	background-image:url('http://planty.local/wp-content/uploads/2024/08/plante-droite.png');
-	background-position: 95% 100%;
-	background-repeat: no-repeat;
-	background-size: 100px 100px;
+.meet-section__team {
+  background-image: url("http://planty.local/wp-content/uploads/2024/08/plante-droite.png");
+  background-position: 95% 100%;
+  background-repeat: no-repeat;
+  background-size: 100px 100px;
 }
 
-
-
-/* Formulaire */
+/* Formulaire nous contacter */
 .wpcf7-form {
-	max-width:50%;
-	margin:auto;
-	display:flex;
-	flex-direction:column;
-	align-items:center;
+  max-width: 50%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.form_background {
-	background-image:url('http://planty.local/wp-content/uploads/2024/08/logo-fleur-2.png');
-	background-position:left bottom;
-	background-repeat: no-repeat;
-	background-size: 100px 100px;
-	padding: 0 44px 3px 44px;
+.meet-form_background {
+  background-image: url("http://planty.local/wp-content/uploads/2024/08/logo-fleur-2.png");
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  background-size: 100px 100px;
+  padding: 0 44px 3px 44px;
 }
 
+#meet-form_send {
+  display: flex;
+  align-items: center;
+  background-color: #e0b9b4;
+  color: white;
+  border-radius: 0px;
+}
 
-#form_send {
-	display:flex;
-	align-items:center;
-	background-color:#E0B9B4;
-	color:white;
-	border-radius:0px;
+.order-border {
+  border-bottom: 2px solid white;
+}
+
+.order-shop {
+  width: 60%;
+  margin: auto;
+  border-top: 2px solid white; /* Bordure en haut */
+  border-bottom: 2px solid white; /* Bordure en bas */
+  padding: 50px 0px;
+}
+
+div.order-quantity {
+  width: 120px;
+  margin: auto;
+  padding: 25px;
+}
+
+/* Formulaire commander */
+
+.order-form {
+  display: flex;
+  gap: 25px;
+}
+
+.order-form .order-form_title {
+  color: white;
+  font-weight: lighter;
+}
+
+.order-form label {
+  color: white;
+}
+
+.form-divider {
+  width: 2px;
+  background-color: white;
+}
+
+#order-form_send {
+  display: flex;
+  align-items: center;
+  background-color: #e0b9b4;
+  color: white;
+  border-radius: 10px;
 }
